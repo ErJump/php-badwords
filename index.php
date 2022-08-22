@@ -1,3 +1,8 @@
+<?php
+    $string = "Now I've heard there was a secret chordThat David played, and it pleased the LordBut you dont really care for music, do you?It goes like this, the fourth, the fifthThe minor falls, the major liftsThe baffled king composing Hallelujah";
+    $length = strlen($string);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +13,20 @@
 </head>
 <body>
     <div>
-        <h1>Hello</h1>
+        <h1>Hallelujah</h1>
+        <h2>Leonard Cohen</h2>
+        <span>
+            <?php
+                echo $string;
+            ?>
+        </span>
+        <br>
+        <strong>Length:</strong>
+        <span>
+            <?php
+                echo $length;
+            ?>
+        </span>
     </div>
 </body>
 </html>
