@@ -1,6 +1,8 @@
 <?php
-    $string = "Now I've heard there was a secret chordThat David played, and it pleased the LordBut you dont really care for music, do you?It goes like this, the fourth, the fifthThe minor falls, the major liftsThe baffled king composing Hallelujah";
+    $string = "Now I've heard there was a secret chord That David played, and it pleased the Lord But you dont really care for music, do you? It goes like this, the fourth, the fifth The minor falls, the major lifts The baffled king composing Hallelujah";
     $length = strlen($string);
+    $hideWord = $_GET["hide"];
+    $censoredString = str_replace($hideWord, '***', $string);
 ?>
 
 <!DOCTYPE html>
@@ -17,7 +19,7 @@
         <h2>Leonard Cohen</h2>
         <span>
             <?php
-                echo $string;
+                echo $censoredString;
             ?>
         </span>
         <br>
